@@ -1,0 +1,2 @@
+_extends: .github
+tag-template: slsa-provenance-$NEXT_MINOR_VERSION

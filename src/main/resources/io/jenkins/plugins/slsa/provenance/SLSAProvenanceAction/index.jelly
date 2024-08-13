@@ -1,0 +1,16 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout"
+	xmlns:st="jelly:stapler">
+	<l:layout title="${%title}">
+		<st:include page="sidepanel" it="${it.run}" optional="true"/>
+		<l:main-panel>
+			<h1>${%title}</h1>
+			<j:forEach var="a" items="${it.attestations}">
+				<h2>${a.key}</h2>
+				<code>
+					<pre>${a.value}</pre>
+				</code>
+			</j:forEach>
+		</l:main-panel>
+	</l:layout>
+</j:jelly>
