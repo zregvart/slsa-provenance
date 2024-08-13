@@ -57,7 +57,7 @@
     <dependency>
       <groupId>com.github.in-toto</groupId>
       <artifactId>in-toto-java</artifactId>
-      <version>c3325e4932</version>
+      <version>0.5</version>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
