@@ -244,7 +244,9 @@ public final class SLSAProvenanceAction implements RunAction2 {
                                     .readTree(in)
                                     .get("payload")
                                     .asText());
-                    attestations.put(artifact.getFileName(), new ObjectMapper().readTree(payload).toPrettyString());
+                    attestations.put(
+                            artifact.getFileName(),
+                            new ObjectMapper().readTree(payload).toPrettyString());
                 } catch (final IOException e) {
                     throw new RuntimeException(e);
                 }
